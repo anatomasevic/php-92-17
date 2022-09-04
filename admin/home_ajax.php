@@ -13,14 +13,10 @@ if(isset($_POST['naslov'])){
 }*/
 
 if(isset($_POST['naslov'])){
-  //  $post = new Postt();
+  
     $naslov=$_POST['naslov'];
     $tekst=$_POST['tekst'];
-    //$post->naslov=mysqli_real_escape_string($conn,$_POST['naslov']);
-   // $post->tekst=mysqli_real_escape_string($conn,$_POST['tekst']);
-  
-   // $naslov=$post->naslov;
-   // $tekst=$post->tekst;
+   
 
     mysqli_query($conn,"INSERT INTO `post`(`naslov`, `tekst`) VALUES ('$naslov','$tekst')");
 }
@@ -41,7 +37,7 @@ if(isset($_POST['name']))
     
     
    mysqli_query($conn, "UPDATE `post` SET`naslov`='$name',`tekst`='$coment' WHERE id=$sifra");
-  // header("Location: index.php");
+  
   
     exit();
 

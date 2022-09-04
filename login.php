@@ -42,7 +42,7 @@ $("#submit").click(function(event){
         data:{email:email,pass:pass},
         success:function(data){
             if(data=="success"){
-                window.location="../iteh_php_92_17/admin/index.php";
+                window.location="../php-92-17/admin/index.php";
 
             }else{
                 alert(data);

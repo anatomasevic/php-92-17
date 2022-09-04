@@ -56,18 +56,7 @@ include('../ucitavanje.php');
 $(document).ready(function(){
 
 load();
-/*$('#search').keypress(function(){
-  $.ajax({
-    type:'POST',
-    url:"home1.php",
-    data:{
-      name:$("search").val(),
-    },
-    success:function(data){
-        $("#content").html(data);
-    }
-  })
-})*/
+
 
 });
 function load(){
@@ -80,25 +69,7 @@ function load(){
     }
 });
 }
-/*
-$("#sub").click(function(){
-    var search =$("#search").val();
-    
-     $.ajax({
-        url:"pretragapost.php",
-        type:"POST",
-        data:{search:search},
-        success:function(data){
-          
-         
-alert(search);            
 
-           
-        }
-
-    });
-   
-});*/
 
 function del(id){
    // alert(id)
@@ -114,24 +85,7 @@ function del(id){
 });
 }
 }
-/*function open(edit_id){
-    $('#Modal').modal('show')
 
-    $.ajax({
-    url:"home_ajax.php",
-    type:"POST",
-    data:{edit_id:edit_id},
-    success:function(data){
-          // load();
-     var obj = JSON.parse(data);
-     // alert(obj);
-      //$("#content").val(obj);
-    //  console.log(obj);
-     $("#content").val(obj);
-    }
-});
-}
-*/
 
 
 function edit(edit_id){
@@ -160,22 +114,15 @@ $("#submit").click(function(){
     var name =$("#name").val();
     var coment =$("#coment").val();
     var sifra =$("#sifra").val();
-    //alert(sifra);
-   
     
-
-    
-     
      $.ajax({
         url:"home_ajax.php",
         type:"POST",
         data:{name:name,coment:coment,sifra:sifra},
         success:function(data){
             alert("Uspesno izmenjeno");
-            window.location="http://localhost:8081/iteh_php_92_17/admin/index.php";
-           //header("Location: index.php");
-
-           
+            window.location="http://localhost:8081/php-92-17/admin/index.php";
+          
         }
 
     });
