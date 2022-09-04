@@ -1,13 +1,7 @@
-<?php session_start();
+<?php 
 include('db.php');
 
-if (!isset($_SESSION['authenticated']))
-{
-    header('Location https://../login.php');
-    exit;
-}
-else
-{
+
     if($_POST['email']){
 
         $email=$_POST['email'];
@@ -20,12 +14,12 @@ else
     
            exit(0);
        }else{
-           $er="username/pass is incorect";
+           $er="username ili sifra su pogresni";
            echo $er;
            exit(0);
        }
     }
-}
+
 
 
 ?>

@@ -30,54 +30,12 @@ include('header.php');
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-md-10 col-lg-8 col-xl-7">
     
- <!--
-           <div class="container">
-               <br/>
-               <div class="form-group">
-                   <div class="input-group">
-                   <button type="submit" name="submit" id="submit" class="btn btn-primary">Pretrazi</button>
 
-                       <input type="text" name="search" id="search" placeholder="Pretrazite prema naslovu posta" class="form-control"/>
-</div>
-</div>
-<br />
-<div id="result"></div>
-</div>  -->
 
 
 
 <script type="text/javascript">
-/*$(document).ready(function(){
-    $("search").keypress(function(){
-        $.ajax({
-            type:'POST',
-            url:"pretraga.php"
-            data:{
-                search:$("#search").val()
-            },
-            success:function(data)
-        })
-    })
-})
 
-$("#submit").click(function(){
-    var search =$("#search").val();
-    
-     $.ajax({
-        url:"pretraga.php",
-        type:"POST",
-        data:{search:search},
-        success:function(data){
-          
-         
-alert(search);            
-
-           
-        }
-
-    });
-   
-});*/
 </script>
     <?php 
 

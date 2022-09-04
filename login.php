@@ -1,28 +1,4 @@
 <?php include('header.php');
-session_start();
-$_SESSION['authenticated']=true;
-/*session_start();
-
-if(isset($_SESSION['loggedIN'])){
-    header("Location: admin/index.php");
-    exit();
-}
-
-if($_POST['login']){
-
-    $email=$_POST['email'];
-    $pass=$_POST['pass'];
-  
-   $data= mysqli_query($conn,"SELECT `id` FROM `admin` WHERE email=$email AND pass=$pass");
-   if($data->num_rows>0){
-       $_SESSION['loggedIN']='1';
-       $_SESSION['email']=$email;
-
-       exit('success');
-   }else{
-       exit('failed');
-   }
-}*/
 
 ?>
 
@@ -55,7 +31,7 @@ $("#submit").click(function(event){
     
    
     if(email=="" || pass=="")
-    alert('input field cant be empty');
+    alert('polja ne smeju da budu prazna');
     else{
     
      

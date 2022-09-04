@@ -116,14 +116,11 @@ $("#submit").click(function(){
         data:{name:name,coment:coment,sifra:sifra},
         success:function(data){
           
-         //window.location="http://localhost:8081/iteh_php_92_17/onepost1.php?id="<?php= $id?">;
+         
             
-            
-          $("#name").val();
-            $("coment").val();
-            $("sifra").val();
+         
 	
-	alert("uspenso ubacen komentar");
+	alert("uspesno ubacen komentar");
            
         }
 
